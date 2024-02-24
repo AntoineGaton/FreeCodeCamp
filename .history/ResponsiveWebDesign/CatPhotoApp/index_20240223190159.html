@@ -1,0 +1,65 @@
+<!DOCTYPE html> <!-- Specifies the document type and version of HTML -->
+<html lang="en"> <!-- Starts an HTML document and sets the language to English -->
+<head>
+   <meta charset="UTF-8"> <!-- Specifies the character encoding for the document (UTF-8 for universal character set) -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport to ensure proper scaling and zooming for mobile devices -->
+   <title>CatPhotoApp</title> <!-- Sets the title of the document that appears in the browser tab -->
+</head>
+<body>
+  <main> <!-- Main content of the page -->
+    <h1>CatPhotoApp</h1> <!-- Main heading of the page -->
+    <section> <!-- Section for cat photos -->
+      <h2>Cat Photos</h2> <!-- Heading for the cat photos section -->
+      <!-- TODO: Add link to cat photos - A reminder comment to add more links to cat photos in the future -->
+      <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p> <!-- Paragraph with a link that opens in a new tab -->
+      <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a> <!-- Image of a cat wrapped in an anchor tag to make it clickable -->
+    </section>
+    <section> <!-- Section for cat lists -->
+      <h2>Cat Lists</h2> <!-- Heading for the cat lists section -->
+      <h3>Things cats love:</h3> <!-- Subheading -->
+      <ul> <!-- Unordered list -->
+        <li>cat nip</li> <!-- List item -->
+        <li>laser pointers</li>
+        <li>lasagna</li>
+      </ul>
+      <figure> <!-- Figure element for including images with captions -->
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate."> <!-- Image of lasagna -->
+        <figcaption>Cats <em>love</em> lasagna.</figcaption>  <!-- Caption for the image -->
+      </figure>
+      <h3>Top 3 things cats hate:</h3> <!-- Subheading -->
+      <ol> <!-- Ordered list -->
+        <li>flea treatment</li> <!-- List item -->
+        <li>thunder</li>
+        <li>other cats</li>
+      </ol>
+      <figure>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field."> <!-- Image of cats -->
+        <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  <!-- Caption for the image -->
+      </figure>
+    </section>
+    <section> <!-- Section for cat form -->
+      <h2>Cat Form</h2> <!-- Heading for the cat form section -->
+      <form action="https://freecatphotoapp.com/submit-cat-photo"> <!-- Form for submitting cat photos -->
+        <fieldset> <!-- Groups related elements in a form -->
+          <legend>Is your cat an indoor or outdoor cat?</legend> <!-- Caption for the fieldset -->
+          <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label> <!-- Radio button for indoor -->
+          <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label> <!-- Radio button for outdoor -->
+        </fieldset>
+        <fieldset>
+          <legend>What's your cat's personality?</legend> <!-- Caption for the fieldset -->
+          <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label> <!-- Checkbox option -->
+          <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+          <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+        </fieldset>
+        <input type="text" name="catphotourl" placeholder="cat photo URL" required> <!-- Text input for cat photo URL -->
+        <button type="submit">Submit</button> <!-- Submit button for the form -->
+      </form>
+    </section>
+  </main>
+  <footer> <!-- Footer section of the page -->
+    <p>
+      No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+    </p>
+  </footer>
+</body>
+</html>
